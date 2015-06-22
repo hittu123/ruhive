@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+{% block title %}{{ block.super }}About{% endblock %}
+
+{% block navbar-left %}
+{% include "_navbar.html" with active_link="about" %}
+{% endblock %}
+
+<!-- Benefits of the Django application -->
+{% block container %}
+
+<div id="sec1" class="text-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>{% include "_brandname.html" %}</h1>
+                <p class="lead">Our Products</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="sec2" class="text-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2>Distributed computing Framework</h2>
+                <p class="lead">RealTime Streaming using Open Source Technologies</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="text-center"><img class="img-circle centered" src="{% static 'site/img/iot6.png' %}" alt="profile pic"></div>
+                <h2>Open Source Distributed Computing Framework</h2>
+                <p>Apache™ Hadoop® is an open source software project that enables distributed processing of large data sets across clusters of commodity servers. It is designed to scale up from a single server to thousands of machines, with very high degree of fault tolerance. Rather than relying on high-end hardware, the resiliency of these clusters comes from the software's ability to detect and handle failures at the application layer. </p>
+        </div>
+    </div>
+</div>
+</div>
+
